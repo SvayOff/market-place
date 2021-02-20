@@ -2,5 +2,171 @@
 @import "_global.scss";
 @import "_fonts.scss";
 
-// import media
-@import "_media.scss";
+.header__top {
+    background-color: $bg;
+}
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    .header__btn {
+        margin-right: 50px;
+        background-color: $blue;
+        padding: 14px 18px 11px;
+        border-radius: 20px;
+        font-size: 14px;
+        @include f300;
+        &-link {
+            color: #fff;
+        }
+    }
+    .notification__box {
+        .notification {
+            font-size: 20px;
+            background-repeat: no-repeat;
+            color: #7e8fa1;
+            position: relative;
+            &__index {
+                position: absolute;
+                color: #fff;
+                font-size: 14px;
+                @include f300;
+                background-color: #ff6a6c;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 26px;
+                height: 22px;
+                padding: 0 2px;
+                top: -15px;
+                right: -13px;
+            }
+        }
+    }
+    .message__box {
+        margin: 0 34px;
+        .message {
+            font-size: 20px;
+            background-repeat: no-repeat;
+            color: #7e8fa1;
+            position: relative;
+            &__index {
+                position: absolute;
+                color: #fff;
+                font-size: 14px;
+                @include f300;
+                background-color: #62d03b;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 22px;
+                height: 22px;
+                padding: 0 2px;
+                top: -15px;
+                right: -13px;
+            }
+        }
+    }
+    .basket__box {
+        .basket {
+            font-size: 20px;
+            background-repeat: no-repeat;
+            color: #7e8fa1;
+            position: relative;
+            &__index {
+                position: absolute;
+                color: #fff;
+                font-size: 14px;
+                @include f300;
+                background-color: $blue;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 22px;
+                height: 22px;
+                padding: 0 2px;
+                top: -15px;
+                right: -15px;
+            }
+        }
+    }
+    .user__inner {
+        display: flex;
+        padding-left: 50px;
+        align-items: center;
+    }
+    .user__info {
+        @include f300;
+        padding-left: 22px;
+        line-height: 22px;
+        &-name {
+            font-size: 16px;
+            color: #333;
+        }
+        &-money {
+            color: $blue;
+        }
+    }
+}
+
+.header__menu {
+    .menu__inner {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+    }
+    .menu__list {
+        .menu__item {
+            display: inline-block;
+            @include f300;
+            text-transform: uppercase;
+            & + .menu__item {
+                margin-left: 32px;
+            }
+            .menu__link {
+                color: #333;
+            }
+        }
+    }
+    .menu__search {
+        form {
+            position: relative;
+        }
+        input {
+            width: 360px;
+            border: 1px solid #d9dfe5;
+            height: 44px;
+            border-radius: 20px;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 70px;
+            &::placeholder {
+                color: #898f96;
+                padding-left: 13px;
+            }
+        }
+        button {
+            width: 70px;
+            height: 44px;
+            border-radius: 20px;
+            background: $blue;
+            border: none;
+            position: absolute;
+            right: 0;
+            font-size: 15;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+}
