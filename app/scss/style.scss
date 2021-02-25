@@ -516,12 +516,14 @@
     &__inner-box {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__item {
         max-width: 360px;
         background-color: #fff;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin-bottom: 30px;
         .release__image-link {
             display: none;
         }
@@ -599,7 +601,7 @@
         }
     }
     &__btn-all {
-        margin-top: 60px;
+        margin-top: 30px;
         text-align: center;
         button {
             color: #fff;
@@ -615,3 +617,101 @@
     }
 }
 // and release
+// start feed
+.feed {
+    background: #eff1f5;
+    &__inner {
+        padding: 115px 0;
+    }
+    &__panel {
+        background-color: #fff;
+        padding: 45px 0px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin-bottom: 50px;
+        position: relative;
+        &-title {
+            font-size: 30px;
+            padding-left: 30px;
+        }
+    }
+    .feed-slider__inner {
+        display: flex;
+        justify-content: space-around;
+    }
+    .release__item {
+        margin-left: 10px;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: -138px;
+        border: none;
+        background-color: #7347c1;
+        padding: 15px;
+        outline: none;
+        width: 55px;
+    }
+    .slick-prev {
+        right: 85px;
+        border-radius: 50% 0 0 50%;
+    }
+    .slick-next {
+        right: 30px;
+        border-radius: 0 50% 50% 0;
+    }
+    .slick-arrow.slick-prev.lnr.lnr-chevron-left::before {
+        color: #fff;
+    }
+    .slick-arrow.slick-next.lnr.lnr-chevron-right::before {
+        color: #fff;
+    }
+}
+// end feed
+// start total
+.total {
+    height: 350px;
+    background-color: #212225;
+    &__inner {
+        padding: 98px 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &__item {
+        &-icon {
+            font-size: 48px;
+            padding-bottom: 35px;
+        }
+        .lnr.lnr-briefcase::before {
+            color: #feb71d;
+        }
+        .lnr.lnr-cloud-download::before {
+            color: #58c9e9;
+        }
+        .lnr.lnr-smile::before {
+            color: #77de51;
+        }
+        .lnr.lnr-users::before {
+            color: #ff6a6d;
+        }
+        &-value {
+            font-size: 36px;
+        }
+        .value-briefcase {
+            color: #feb71d;
+        }
+        .value-download {
+            color: #58c9e9;
+        }
+        .value-smile {
+            color: #77de51;
+        }
+        .value-users {
+            color: #ff6a6d;
+        }
+        &-text {
+            font-size: 18px;
+            color: #fff;
+            padding-top: 15px;
+        }
+    }
+}
