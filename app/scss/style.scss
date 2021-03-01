@@ -715,3 +715,82 @@
         }
     }
 }
+// end total
+// strat choose
+.choose {
+    &__inner {
+        padding: 110px 0;
+    }
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        font-weight: 400;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        text-align: center;
+        font-size: 16px;
+        color: #555;
+        max-width: 680px;
+        margin: 0 auto;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 58px;
+    }
+    &__item {
+        max-width: 360px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        padding: 55px 35px 40px;
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        &-icon {
+            padding-bottom: 50px;
+            font-size: 60px;
+        }
+        .lnr.lnr-license::before {
+            color: $blue;
+        }
+        .lnr.lnr-magic-wand::before {
+            color: $purple;
+        }
+        .lnr.lnr-lock::before {
+            color: #77de51;
+        }
+        .lnr.lnr-chart-bars::before {
+            color: #feb71d;
+        }
+        .lnr.lnr-leaf::before {
+            color: #58c9e9;
+        }
+        .lnr.lnr-phone::before {
+            color: #ff6a6d;
+        }
+        &-title {
+            font-size: 24px;
+            padding-bottom: 24px;
+            color: #000;
+        }
+        &-text {
+            color: #555;
+            font-size: 16px;
+            line-height: 30px;
+            width: 295px;
+        }
+        &-number {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-size: 48px;
+            color: #5c87f8;
+            @include f300;
+            opacity: 0.2;
+        }
+    }
+}
+// end choose
