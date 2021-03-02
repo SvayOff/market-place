@@ -1035,7 +1035,7 @@
         padding: 60px 0;
         &-money {
             border-right: 1px solid #e8eaf3;
-            margin-left: 87px;
+            margin-left: 85px;
             padding-right: 130px;
         }
         &-support {
@@ -1046,7 +1046,49 @@
         }
         &-title {
             font-size: 24px;
+            @include f500;
+        }
+        .title__money {
+            a {
+                color: $blue;
+            }
+        }
+        .title__support {
+            a {
+                color: $purple;
+            }
         }
     }
 }
 // end pros
+// start join
+.join {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__inner {
+        padding: 110px 0;
+        text-align: center;
+    }
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        padding-bottom: 20px;
+    }
+    &__text {
+        font-size: 18px;
+        color: #fff;
+        padding-bottom: 50px;
+    }
+    &__link {
+        a {
+            color: $blue;
+            background-color: #fff;
+            font-size: 16px;
+            width: 190px;
+            padding: 20px 10px;
+            border-radius: 30px;
+        }
+    }
+}
+// end join
