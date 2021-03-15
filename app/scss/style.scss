@@ -1,6 +1,8 @@
 @import "_vars.scss";
 @import "_global.scss";
 @import "_fonts.scss";
+
+// start index.html
 // start header
 .header__top {
     background-color: $bg;
@@ -1175,6 +1177,7 @@
                 color: #fff;
                 padding: 5px;
                 right: 14px;
+                cursor: pointer;
             }
         }
         &-social {
@@ -1234,9 +1237,6 @@
                     font-family: "icomoon";
                 }
             }
-            li + li {
-                margin-left: 13px;
-            }
         }
     }
     &__copy {
@@ -1254,3 +1254,111 @@
     }
 }
 // end footer
+// end index.html
+
+// start how-it-works.html
+// start breadcrumbs
+.breadcrumbs {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    &__inner {
+        text-align: center;
+    }
+    &__title {
+        padding-top: 75px;
+        line-height: 50px;
+        font-size: 30px;
+        color: #fff;
+        @include f500;
+        span {
+            display: block;
+            @include f300;
+        }
+    }
+    &__list {
+        color: #fff;
+        padding-top: 60px;
+        li {
+            display: inline-block;
+        }
+        a {
+            color: #fff;
+        }
+        span {
+            color: #bfcad7;
+        }
+    }
+}
+// end breadcrumbs
+// start works
+.works {
+    &-product {
+        background-color: #eff1f5;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 95px 0;
+        &-info {
+            width: 450px;
+        }
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 30px;
+    }
+    &__text {
+        font-size: 16px;
+        color: #555;
+        line-height: 30px;
+        padding-bottom: 18px;
+    }
+    &__btn {
+        background-color: $blue;
+        color: #fff;
+        width: 170px;
+        text-align: center;
+        padding: 18px 5px;
+        border-radius: 30px;
+        transition: all 0.3s;
+    }
+    &__btn:hover {
+        background-color: #fff;
+        color: $blue;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s;
+    }
+}
+.works-join {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__inner {
+        text-align: center;
+        color: #fff;
+        padding: 100px 0;
+    }
+    &__title {
+        font-size: 36px;
+    }
+    &__text {
+        padding-top: 5px;
+        font-size: 18px;
+        color: #e7e7e7;
+    }
+    &__btn {
+        background-color: #fff;
+        color: $blue;
+        width: 190px;
+        text-align: center;
+        font-size: 16px;
+        padding: 20px 5px;
+        border-radius: 30px;
+        margin-top: 35px;
+    }
+}
+// end works
+// end how-it-works.html
