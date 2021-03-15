@@ -1368,7 +1368,7 @@
 
 // start registration.html
 // start breadcrumbs
-.breadcrumbs__registration {
+.breadcrumbs {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1476,3 +1476,176 @@
 }
 // end registration
 // end registration.html
+
+// start pricing.html
+.pricing {
+    background-color: #eff1f5;
+    &__inner {
+        padding: 100px 0;
+    }
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        span {
+            color: $blue;
+        }
+    }
+    &__text {
+        color: #555;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        width: 675px;
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 45px;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 360px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        padding: 0 30px;
+        &-started {
+            border-top: 3px solid #ff6a6c;
+            .pricing__item-money {
+                font-size: 36px;
+                text-align: center;
+                padding-top: 25px;
+                position: relative;
+                &::after {
+                    content: "$";
+                    position: absolute;
+                    font-size: 18px;
+                    left: 68px;
+                    top: 32px;
+                }
+            }
+            .pricing__item-link {
+                a {
+                    background-color: #ff6a6c;
+                }
+            }
+        }
+        &-business {
+            border-top: 3px solid $blue;
+            .pricing__item-money {
+                font-size: 36px;
+                text-align: center;
+                padding-top: 25px;
+                position: relative;
+                &::before {
+                    content: "$";
+                    position: absolute;
+                    font-size: 18px;
+                    left: 68px;
+                    top: 32px;
+                }
+            }
+            .pricing__item-link {
+                a {
+                    background-color: $blue;
+                }
+            }
+        }
+        &-agency {
+            border-top: 3px solid #feb71d;
+            .pricing__item-money {
+                font-size: 36px;
+                text-align: center;
+                padding-top: 25px;
+                position: relative;
+                &::before {
+                    content: "$";
+                    position: absolute;
+                    font-size: 18px;
+                    left: 58px;
+                    top: 32px;
+                }
+            }
+            .pricing__item-link {
+                a {
+                    background-color: #feb71d;
+                }
+            }
+        }
+        &-title {
+            font-size: 24px;
+            @include f500;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e8ebf0;
+        }
+        &-money {
+            span {
+                font-size: 16px;
+                color: #555;
+            }
+        }
+        &-list {
+            padding: 35px 0;
+
+            li + li {
+                padding-top: 15px;
+            }
+        }
+        &-point {
+            color: #555;
+            font-size: 16px;
+            position: relative;
+            padding-left: 23px;
+
+            &::after {
+                content: "";
+                background-color: #c5cad4;
+                width: 7px;
+                height: 7px;
+                position: absolute;
+                border-radius: 50%;
+                left: 0;
+                bottom: 5px;
+            }
+            span {
+                color: #000;
+                @include f500;
+            }
+        }
+        .lnr-question-circle:before {
+            content: "\e87d";
+            position: absolute;
+            font-size: 18px;
+        }
+        .pricing__item-point.point-templates.lnr.lnr-question-circle::before {
+            right: 65px;
+            top: 17px;
+        }
+        .pricing__item-point.point-support.lnr.lnr-question-circle::before {
+            right: 87px;
+            top: 17px;
+        }
+        .pricing__item-point.point-demos.lnr.lnr-question-circle::before {
+            right: 135px;
+            top: 16px;
+        }
+        &-link {
+            margin-bottom: 30px;
+            a {
+                width: 300px;
+                background: #000;
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                line-height: 28px;
+                padding: 10px 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+// end pricing.html
