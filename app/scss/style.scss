@@ -1195,6 +1195,9 @@
                     left: 14px;
                 }
             }
+            a + a {
+                margin-left: 10px;
+            }
             .social-facebook {
                 background-color: #395799;
                 &::before {
@@ -1258,15 +1261,14 @@
 
 // start how-it-works.html
 // start breadcrumbs
-.breadcrumbs {
+.breadcrumbs__works {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 280px;
-    &__inner {
+    .breadcrumbs__inner {
         text-align: center;
     }
-    &__title {
+    .breadcrumbs__title {
         padding-top: 75px;
         line-height: 50px;
         font-size: 30px;
@@ -1277,9 +1279,10 @@
             @include f300;
         }
     }
-    &__list {
+    .breadcrumbs__list {
         color: #fff;
         padding-top: 60px;
+        padding-bottom: 25px;
         li {
             display: inline-block;
         }
@@ -1362,3 +1365,114 @@
 }
 // end works
 // end how-it-works.html
+
+// start registration.html
+// start breadcrumbs
+.breadcrumbs__registration {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .breadcrumbs__inner {
+    }
+    .breadcrumbs__list {
+        color: #fff;
+        padding-top: 60px;
+        padding-bottom: 15px;
+        li {
+            display: inline-block;
+        }
+        a {
+            color: #fff;
+        }
+        span {
+            color: #bfcad7;
+        }
+    }
+    .breadcrumbs__title {
+        padding-bottom: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        color: #fff;
+        @include f500;
+        span {
+            display: block;
+            @include f300;
+        }
+    }
+}
+// end breadcrumbs
+// start registration
+.registration {
+    background-color: #eff1f5;
+    padding: 70px 0 120px;
+    &__inner {
+        max-width: 555px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 5px;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+    &__info {
+        text-align: center;
+        border-bottom: 1px solid #e8ebf0;
+        padding-bottom: 5px;
+    }
+    &__title {
+        font-size: 26px;
+        line-height: 28px;
+        padding: 0 65px;
+    }
+    &__text {
+        font-size: 16px;
+        color: #555;
+        line-height: 28px;
+        padding: 0 60px;
+    }
+    &__box {
+        padding: 25px 50px 55px;
+        font-size: 16px;
+        .registration__line + .registration__line {
+            padding-top: 25px;
+        }
+    }
+    &__line {
+        label {
+            display: block;
+            padding-bottom: 5px;
+            @include f500;
+            line-height: 26px;
+        }
+        input {
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #f4f5f8;
+            border: none;
+            outline: none;
+            &::placeholder {
+                color: #898f96;
+            }
+        }
+    }
+    &__btn {
+        width: 190px;
+        text-align: center;
+        background-color: $blue;
+        color: #fff;
+        border: none;
+        outline: none;
+        padding: 18px 5px;
+        border-radius: 30px;
+        margin: 30px 0px;
+        cursor: pointer;
+    }
+    &__link {
+        color: #898f96;
+        line-height: 26px;
+        a {
+            color: $blue;
+        }
+    }
+}
+// end registration
+// end registration.html
