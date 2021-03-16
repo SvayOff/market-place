@@ -1809,7 +1809,7 @@
 // end contact
 // end contact.html
 
-// start terms.page
+// start terms.html
 .terms {
     background-color: #eff1f5;
     padding: 60px 0 100px;
@@ -1833,4 +1833,105 @@
         padding: 0 40px 0 25px;
     }
 }
-// end terms.page
+// end terms.html
+
+// start login.html
+.login {
+    background-color: #eff1f5;
+
+    &__inner {
+        padding: 60px 0 100px 0;
+        max-width: 555px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__box {
+        background-color: #fff;
+        &-title {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 26px;
+        }
+        &-text {
+            color: #555;
+            line-height: 28px;
+            font-size: 16px;
+            text-align: center;
+            padding: 15px 0 25px 0;
+            border-bottom: 1px solid #e8ebf0;
+        }
+        &-form {
+            padding: 25px 50px 60px;
+        }
+        &-line {
+            padding-bottom: 30px;
+            label {
+                display: block;
+                padding-bottom: 10px;
+                font-size: 16px;
+                @include f500;
+            }
+            input {
+                padding: 17px 20px;
+                width: 100%;
+                background-color: #f4f5f8;
+                border: none;
+                outline: none;
+                &::placeholder {
+                    font-size: 16px;
+                    color: #898f96;
+                }
+            }
+        }
+        &-remember {
+            padding-bottom: 30px;
+            label {
+                padding-left: 10pxgulp;
+                font-size: 16px;
+                color: #555;
+            }
+            .jq-checkbox {
+                border-radius: 50%;
+            }
+            .jq-checkbox,
+            .jq-radio {
+                vertical-align: -4px;
+                width: 20px;
+                height: 20px;
+                margin: 0 8px 0 0;
+                border: none;
+                background: $blue;
+                box-shadow: none;
+                cursor: pointer;
+            }
+            .jq-checkbox.checked .jq-checkbox__div {
+                width: 11px;
+                height: 7px;
+                margin: 5px 0 0 4px;
+                border-bottom: 2px solid #fff;
+                border-left: 2px solid #fff;
+            }
+        }
+        &-btn {
+            width: 190px;
+            background-color: $blue;
+            color: #fff;
+            padding: 17px 5px;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 35px;
+        }
+        &-creation {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            color: #898f96;
+            a {
+                color: $blue;
+            }
+        }
+    }
+}
+// end login.html

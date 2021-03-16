@@ -10,4 +10,6 @@ $(function () {
         slidesToScroll: 1,
     });
 
+    $('input[type="checkbox"]').styler();
+
 });
