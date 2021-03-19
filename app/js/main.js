@@ -1,4 +1,21 @@
 $(function () {
+
+    $(".ratestar--small").rateYo({
+        rating: 4.5,
+        readOnly: true,
+        starWidth: '12px',
+        ratedFill: "#ffc000",
+        spacing: '3px'
+    });
+
+    $(".ratestar--big").rateYo({
+        rating: 4.5,
+        readOnly: true,
+        starWidth: '16px',
+        ratedFill: "#ffc000",
+        spacing: '3px'
+    });
+
     $('.featured-slider__inner').slick({
         prevArrow: '<button class="slick-arrow slick-prev lnr lnr-chevron-left"></button>',
         nextArrow: '<button class="slick-arrow slick-next lnr lnr-chevron-right"></button>',
@@ -18,6 +35,17 @@ $(function () {
         $('#' + id).addClass('active-tab').fadeIn();
         return false;
     });
+
+    $('.corporate-business__tabs .tab').on('click', function (event) {
+        var id = $(this).attr('data-id');
+        $('.corporate-business__tabs').find('.tab-item').removeClass('active-tab').hide();
+        $('.corporate-business__tabs .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#' + id).addClass('active-tab').fadeIn();
+        return false;
+    });
+
+
 
     $('input[type="checkbox"]').styler();
 
