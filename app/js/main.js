@@ -46,7 +46,17 @@ $(function () {
     });
 
 
+    $('input[type="checkbox"], select').styler();
 
-    $('input[type="checkbox"]').styler();
+    $('.favorites-filter__mode-list').on('click', function () {
+        $('.favorites-content__item').addClass('list');
+        $('.favorites-filter__mode-list').addClass('active');
+        $('.favorites-filter__mode-large').removeClass('active');
+    });
+    $('.favorites-filter__mode-large').on('click', function () {
+        $('.favorites-content__item').removeClass('list');
+        $('.favorites-filter__mode-large').addClass('active');
+        $('.favorites-filter__mode-list').removeClass('active');
+    });
 
 });
