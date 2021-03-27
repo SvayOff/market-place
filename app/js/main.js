@@ -59,4 +59,24 @@ $(function () {
         $('.favorites-filter__mode-list').removeClass('active');
     });
 
+    $('.filter__mode-list').on('click', function () {
+        $('.new-products__item').addClass('list');
+        $('.filter__mode-list').addClass('active');
+        $('.filter__mode-large').removeClass('active');
+    });
+    $('.filter__mode-large').on('click', function () {
+        $('.new-products__item').removeClass('list');
+        $('.filter__mode-large').addClass('active');
+        $('.filter__mode-list').removeClass('active');
+    });
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 320,
+        from: 30,
+        to: 300,
+        prefix: "$"
+    });
+
 });

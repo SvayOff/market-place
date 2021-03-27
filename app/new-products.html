@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Market Place</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner">
+
+                            <div class="header__logo">
+                                <a class="header__logo-link" href="#">
+                                    <img class="header__logo-image" src="images/logo.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="header__box">
+
+                                <div class="header__btn">
+                                    <a class="header__btn-link" href="#">
+                                        Become a Seller
+                                    </a>
+                                </div>
+
+                                <div class="notification__box">
+                                    <a class="notification lnr lnr-alarm" href="#">
+                                        <span class=" notification__index">25</span>
+                                    </a>
+                                </div>
+
+                                <div class="message__box">
+                                    <a class="message lnr lnr-envelope" href="#">
+                                        <span class="message__index">6</span>
+                                    </a>
+                                </div>
+
+                                <div class="basket__box">
+                                    <a class="basket lnr lnr-cart" href="#">
+                                        <span class="basket__index">2</span>
+                                    </a>
+                                </div>
+
+                                <div class="user__box">
+                                    <a class="user" href="#">
+                                        <div class="user__inner">
+                                            <div class="user__image">
+                                                <img src="images/content/user.png" alt="">
+                                            </div>
+                                            <div class="user__info">
+                                                <div class="user__info-name">
+                                                    Taofiq Hakim
+                                                </div>
+                                                <div class="user__info-money">
+                                                    $20.45
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__menu">
+                    <div class="container">
+                        <nav class="menu">
+                            <div class="menu__inner">
+
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            home
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            all products
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            wordpress
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            festures
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="#">
+                                            Pages
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="menu__search">
+                                    <form>
+                                        <input type="text" placeholder="Search product here..." required>
+                                        <button class="lnr lnr-magnifier" type="submit"></button>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <div class="new-products__breadcrumbs" style="background-image: url(images/breadcrumbs.jpg);">
+                <div class="container">
+                    <div class="new-products__breadcrumbs-inner">
+                        <div class="new-products__breadcrumbs-title">
+                            4,572 wordpress themes, made with love
+                        </div>
+                        <form class="new-products__breadcrumbs-form">
+                            <input type="text" placeholder="Search your products" required>
+                            <button type="submit">Search</button>
+                        </form>
+                        <ul class="new-products__breadcrumbs-list">
+                            <li><a href="#">Home</a></li> /
+                            <li><span>New Products</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="new-products__filter">
+                <div class="container">
+                    <div class="new-products__filter-inner">
+
+                        <div class="new-products__filter-btns">
+                            <button class="new-products__filter-btn active">
+                                New Products
+                            </button>
+                            <button class="new-products__filter-btn">
+                                Popular Products
+                            </button>
+                        </div>
+
+
+                        <div class="new-products__filter-filters">
+                            <select class="new-products__filter-price">
+                                <option>Price : Low to High</option>
+                                <option>Price : High to Low</option>
+                            </select>
+                            <select class="new-products__filter-pages">
+                                <option>12 Items Per Page</option>
+                                <option> Items Per Page</option>
+                            </select>
+                        </div>
+                        <div class="new-products__filter-mode">
+                            <button class="filter__mode-large active">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px">
+                                    <path fill-rule="evenodd" fill="rgb(116, 123, 134)" d="M19.526,19.903 L0.474,19.903 C0.245,19.903 0.059,19.716 0.059,19.485 L0.059,0.514 C0.059,0.283 0.245,0.096 0.474,0.096 L19.526,0.096 C19.755,0.096 19.941,0.283 19.941,0.514 L19.941,19.485 C19.941,19.716 19.755,19.903 19.526,19.903 ZM19.111,10.418 L18.584,10.418 C18.355,10.418 18.169,10.231 18.169,10.000 C18.169,9.769 18.355,9.581 18.584,9.581 L19.111,9.581 L19.111,0.933 L10.415,0.933 L10.415,1.351 C10.415,1.582 10.229,1.769 10.000,1.769 C9.770,1.769 9.585,1.582 9.585,1.351 L9.585,0.933 L0.889,0.933 L0.889,9.581 L1.416,9.581 C1.645,9.581 1.831,9.769 1.831,10.000 C1.831,10.231 1.645,10.418 1.416,10.418 L0.889,10.418 L0.889,19.067 L9.585,19.067 L9.585,18.648 C9.585,18.417 9.771,18.230 10.000,18.230 C10.229,18.230 10.415,18.417 10.415,18.648 L10.415,19.067 L19.111,19.067 L19.111,10.418 ZM10.415,10.786 C10.415,11.017 10.229,11.204 10.000,11.204 C9.770,11.204 9.585,11.017 9.585,10.786 L9.585,10.418 L9.219,10.418 C8.990,10.418 8.804,10.231 8.804,10.000 C8.804,9.769 8.990,9.581 9.219,9.581 L9.585,9.581 L9.585,9.213 C9.585,8.982 9.771,8.795 10.000,8.795 C10.229,8.795 10.415,8.982 10.415,9.213 L10.415,9.581 L10.780,9.581 C11.010,9.581 11.196,9.769 11.196,10.000 C11.196,10.231 11.010,10.418 10.780,10.418 L10.415,10.418 L10.415,10.786 ZM12.341,9.581 L13.902,9.581 C14.131,9.581 14.317,9.769 14.317,10.000 C14.317,10.231 14.131,10.418 13.902,10.418 L12.341,10.418 C12.112,10.418 11.926,10.231 11.926,10.000 C11.926,9.769 12.112,9.581 12.341,9.581 ZM15.463,9.581 L17.024,9.581 C17.253,9.581 17.439,9.769 17.439,10.000 C17.439,10.231 17.253,10.418 17.024,10.418 L15.463,10.418 C15.233,10.418 15.047,10.231 15.047,10.000 C15.047,9.769 15.233,9.581 15.463,9.581 ZM10.000,8.059 C9.770,8.059 9.585,7.872 9.585,7.641 L9.585,6.068 C9.585,5.837 9.771,5.650 10.000,5.650 C10.229,5.650 10.415,5.837 10.415,6.068 L10.415,7.641 C10.415,7.872 10.229,8.059 10.000,8.059 ZM10.000,4.915 C9.770,4.915 9.585,4.727 9.585,4.496 L9.585,2.924 C9.585,2.692 9.771,2.505 10.000,2.505 C10.229,2.505 10.415,2.692 10.415,2.924 L10.415,4.496 C10.415,4.727 10.229,4.915 10.000,4.915 ZM7.659,10.418 L6.098,10.418 C5.868,10.418 5.682,10.231 5.682,10.000 C5.682,9.769 5.868,9.581 6.098,9.581 L7.659,9.581 C7.888,9.581 8.074,9.769 8.074,10.000 C8.074,10.231 7.888,10.418 7.659,10.418 ZM4.537,10.418 L2.976,10.418 C2.747,10.418 2.561,10.231 2.561,10.000 C2.561,9.769 2.747,9.581 2.976,9.581 L4.537,9.581 C4.767,9.581 4.953,9.769 4.953,10.000 C4.953,10.231 4.767,10.418 4.537,10.418 ZM10.000,11.940 C10.229,11.940 10.415,12.127 10.415,12.358 L10.415,13.931 C10.415,14.162 10.229,14.349 10.000,14.349 C9.770,14.349 9.585,14.162 9.585,13.931 L9.585,12.358 C9.585,12.127 9.771,11.940 10.000,11.940 ZM10.000,15.085 C10.229,15.085 10.415,15.272 10.415,15.503 L10.415,17.076 C10.415,17.307 10.229,17.494 10.000,17.494 C9.770,17.494 9.585,17.307 9.585,17.076 L9.585,15.503 C9.585,15.272 9.771,15.085 10.000,15.085 Z" />
+                                </svg>
+                            </button>
+                            <button class="filter__mode-list">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="19px">
+                                    <path fill-rule="evenodd" fill="rgb(116, 123, 134)" d="M19.723,15.636 L7.511,15.636 C7.349,15.636 7.218,15.507 7.218,15.348 C7.218,15.190 7.349,15.061 7.511,15.061 L19.723,15.061 C19.885,15.061 20.016,15.190 20.016,15.348 C20.016,15.507 19.885,15.636 19.723,15.636 ZM19.723,10.724 L7.511,10.724 C7.349,10.724 7.218,10.595 7.218,10.436 C7.218,10.278 7.349,10.149 7.511,10.149 L19.723,10.149 C19.885,10.149 20.016,10.278 20.016,10.436 C20.016,10.595 19.885,10.724 19.723,10.724 ZM19.723,8.882 L7.511,8.882 C7.349,8.882 7.218,8.753 7.218,8.595 C7.218,8.436 7.349,8.307 7.511,8.307 L19.723,8.307 C19.885,8.307 20.016,8.436 20.016,8.595 C20.016,8.753 19.885,8.882 19.723,8.882 ZM19.723,3.971 L7.511,3.971 C7.349,3.971 7.218,3.842 7.218,3.683 C7.218,3.524 7.349,3.395 7.511,3.395 L19.723,3.395 C19.885,3.395 20.016,3.524 20.016,3.683 C20.016,3.842 19.885,3.971 19.723,3.971 ZM19.723,2.129 L7.511,2.129 C7.349,2.129 7.218,2.000 7.218,1.841 C7.218,1.682 7.349,1.553 7.511,1.553 L19.723,1.553 C19.885,1.553 20.016,1.682 20.016,1.841 C20.016,2.000 19.885,2.129 19.723,2.129 ZM4.693,19.013 L0.936,19.013 C0.429,19.013 0.016,18.608 0.016,18.111 L0.016,14.427 C0.016,13.930 0.429,13.526 0.936,13.526 L4.693,13.526 C5.201,13.526 5.613,13.930 5.613,14.427 L5.613,18.111 C5.613,18.608 5.201,19.013 4.693,19.013 ZM5.026,14.427 C5.026,14.248 4.877,14.101 4.693,14.101 L0.936,14.101 C0.753,14.101 0.603,14.248 0.603,14.427 L0.603,18.111 C0.603,18.291 0.753,18.438 0.936,18.438 L4.693,18.438 C4.877,18.438 5.026,18.291 5.026,18.111 L5.026,14.427 ZM4.693,12.259 L0.936,12.259 C0.429,12.259 0.016,11.855 0.016,11.358 L0.016,7.674 C0.016,7.176 0.429,6.772 0.936,6.772 L4.693,6.772 C5.201,6.772 5.613,7.176 5.613,7.674 L5.613,11.358 C5.613,11.855 5.201,12.259 4.693,12.259 ZM5.026,7.674 C5.026,7.494 4.877,7.347 4.693,7.347 L0.936,7.347 C0.753,7.347 0.603,7.494 0.603,7.674 L0.603,11.358 C0.603,11.537 0.753,11.684 0.936,11.684 L4.693,11.684 C4.877,11.684 5.026,11.537 5.026,11.358 L5.026,7.674 ZM4.693,5.506 L0.936,5.506 C0.429,5.506 0.016,5.101 0.016,4.604 L0.016,0.920 C0.016,0.423 0.429,0.018 0.936,0.018 L4.693,0.018 C5.201,0.018 5.613,0.423 5.613,0.920 L5.613,4.604 C5.613,5.101 5.201,5.506 4.693,5.506 ZM5.026,0.920 C5.026,0.740 4.877,0.594 4.693,0.594 L0.936,0.594 C0.753,0.594 0.603,0.740 0.603,0.920 L0.603,4.604 C0.603,4.784 0.753,4.930 0.936,4.930 L4.693,4.930 C4.877,4.930 5.026,4.784 5.026,4.604 L5.026,0.920 ZM7.511,16.902 L19.723,16.902 C19.885,16.902 20.016,17.031 20.016,17.190 C20.016,17.349 19.885,17.478 19.723,17.478 L7.511,17.478 C7.349,17.478 7.218,17.349 7.218,17.190 C7.218,17.031 7.349,16.902 7.511,16.902 Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="new-products">
+                <div class="container">
+                    <div class="new-products__inner">
+
+                        <aside class="new-products__aside">
+
+                            <div class="categories aside-item">
+                                <div class="aside-item__title lnr lnr-chevron-down">
+                                    Categories
+                                </div>
+                                <ul class="categories__list">
+                                    <li class="categories__list-line lnr lnr-chevron-right">
+                                        <a class="categories__list-link active" href="#">Wordpress</a>
+                                        <span>35</span>
+                                    </li>
+                                    <li class="categories__list-line lnr lnr-chevron-right">
+                                        <a class="categories__list-link" href="#">Landing Pag</a>
+                                        <span>45</span>
+                                    </li>
+                                    <li class="categories__list-line lnr lnr-chevron-right">
+                                        <a class="categories__list-link" href="#">Psd Template</a>
+                                        <span>13</span>
+                                    </li>
+                                    <li class="categories__list-line lnr lnr-chevron-right">
+                                        <a class="categories__list-link" href="#">Plugins</a>
+                                        <span>08</span>
+                                    </li>
+                                    <li class="categories__list-line lnr lnr-chevron-right">
+                                        <a class="categories__list-link" href="#">HTML Template</a>
+                                        <span>34</span>
+                                    </li>
+                                    <li class="categories__list-line lnr lnr-chevron-right">
+                                        <a class="categories__list-link" href="#">Components</a>
+                                        <span>78</span>
+                                    </li>
+                                    <li class="categories__list-line lnr lnr-chevron-right">
+                                        <a class="categories__list-link" href="#">Joomla Template</a>
+                                        <span>26</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="filter-products aside-item">
+                                <div class="aside-item__title lnr lnr-chevron-down">
+                                    Filter Products
+                                </div>
+                                <form class="filter-products__list">
+                                    <div class="filter-products__list-row">
+                                        <input id="trending-products" type="checkbox">
+                                        <label for="trending-products">Trending Products</label>
+                                    </div>
+                                    <div class="filter-products__list-row">
+                                        <input id="popular-products" type="checkbox">
+                                        <label for="popular-products">Popular Products</label>
+                                    </div>
+                                    <div class="filter-products__list-row">
+                                        <input id="new-products" type="checkbox">
+                                        <label for="new-products">New Products</label>
+                                    </div>
+                                    <div class="filter-products__list-row">
+                                        <input id="best-seller" type="checkbox">
+                                        <label for="best-seller">Best Seller</label>
+                                    </div>
+                                    <div class="filter-products__list-row">
+                                        <input id="best-rating" type="checkbox">
+                                        <label for="best-rating">Best Rating</label>
+                                    </div>
+                                    <div class="filter-products__list-row">
+                                        <input id="low-price" type="checkbox">
+                                        <label for="low-price">Low Price</label>
+                                    </div>
+                                    <div class="filter-products__list-row">
+                                        <input id="high-price" type="checkbox">
+                                        <label for="high-price">High Price</label>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <div class="pricing-range aside-item">
+                                <div class="aside-item__title lnr lnr-chevron-down">
+                                    Pricing Range
+                                </div>
+                                <form class="pricing-range__list">
+                                    <input type="text" class="js-range-slider" name="my_range" value="" />
+                                    <button type="submit">Search Update</button>
+                                </form>
+                            </div>
+
+                        </aside>
+
+                        <div class="new-products__content">
+
+                            <div class="new-products__box">
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Themepert
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Theme-Valley
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            TrendyDesign
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            EchoTheme
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Theme-Valley
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Artcorner
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Themepert
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Theme-Valley
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            TrendyDesign
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            EchoTheme
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Theme-Valley
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="new-products__item">
+                                    <a href="#" class="new-products__item-image" style="background-image:url(images/content/new-product_item.png)">
+                                    </a>
+                                    <a href="#" class="new-products__item-title">
+                                        Finance and Consulting Business Theme
+                                    </a>
+                                    <div class="new-products__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </div>
+                                    <div class="new-products__item-border--main"></div>
+                                    <div class="new-products__item-user">
+                                        <a href="#" class="new-products__item-avatar">
+                                            <img src="images/content/avatar.png" alt="">
+                                        </a>
+                                        <a href="#" class="new-products__item-name">
+                                            Artcorner
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-likes lnr lnr-heart">
+                                        90 loves
+                                    </div>
+                                    <div class="new-products__item-comments lnr lnr-bubble">
+                                        90 Comments
+                                    </div>
+                                    <div class="new-products__item-other">
+                                        <div class="new-products__item-rate">
+                                            <div class="ratestar--small"></div>
+                                            <span>(34)</span>
+                                        </div>
+                                        <a href="#" class="new-products__item-shop lnr lnr-cart">
+                                            425
+                                        </a>
+                                    </div>
+                                    <div class="new-products__item-border--secondary">
+
+                                    </div>
+                                    <div class="new-products__item-info">
+                                        <a href="#" class="new-products__item-price">
+                                            $18
+                                        </a>
+                                        <a href="#" class="new-products__item-price--vers">
+                                            $39.00
+                                        </a>
+                                        <a href="#" class="new-products__item-category">
+                                            Wordpress
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="pagination">
+                                <div class="pagination__list">
+                                    <li><a class="lnr lnr-arrow-left" href="#"></a></li>
+                                    <li><span class="active" href="#">1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a class="lnr lnr-arrow-right" href="#"></a></li>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="join" style="background-image: url(images/join-bg.jpg);">
+                <div class="container">
+                    <div class="join__inner">
+                        <div class="join__title">Ready to Join Our Marketplace!</div>
+                        <div class="join__text">Over 25,000 designers and developers trust the MartPlace.</div>
+                        <a href="#" class="join__btn">Join Us Today</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="container">
+                    <div class="footer__inner">
+
+                        <d iv class="footer__col footer__col-addres">
+                            <div class="footer__col-logo">
+                                <img src="images/footer-logo.png" alt="">
+                            </div>
+                            <div class="footer__col-text">
+                                Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
+                            </div>
+                            <div class="footer__col-phone">
+                                Phone: <a href="tell:67898752235">+6789-875-2235</a>
+                            </div>
+                            <div class="footer__col-mail">
+                                support@aazztech.com
+                            </div>
+                            <div class="footer__col-info">
+                                202 New Hampshire Avenue
+                                Northwest #100, New York-2573
+                            </div>
+                        </d>
+
+                        <div class="footer__col footer__col-menu">
+                            <div class="footer__col-title">
+                                Our Company
+                            </div>
+                            <ul class="footer__col-list">
+                                <li>
+                                    <a href="#">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        How It Work
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Affiliates
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Testimonials
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Copyright Notice
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col footer__col-menu">
+                            <div class="footer__col-title">
+                                Help Support
+                            </div>
+                            <ul class="footer__col-list">
+                                <li>
+                                    <a href="#">
+                                        Support Forum
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Support Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Refund Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        FAQs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Buyers Faq
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Sellers Faq
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col footer__col-contact">
+                            <div class="footer__col-title">
+                                Newsletter
+                            </div>
+                            <div class="footer__col-appeal">
+                                Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
+                            </div>
+                            <form class="footer__col-search">
+                                <input type="text" placeholder="Enter email" required>
+                                <button type="submit">Submit</button>
+                            </form>
+                            <ul class="footer__col-social social">
+                                <a href="#">
+                                    <li class="social-facebook">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="social-twetter">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="social-google">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="social-pinterest">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="social-linkedin">
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="social-dribbble">
+                                    </li>
+                                </a>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copy">
+                <div class="container">
+                    <div class="footer__copy-text">
+                        ©2017 <a href="#">MartPlace</a>. All rights reserved. Created <a href="#">AazzTech</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
